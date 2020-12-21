@@ -9,6 +9,7 @@ import javax.persistence.Id;
 
 @Entity
 public class User implements Serializable  {
+	public User() {};
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -75,7 +76,6 @@ public class User implements Serializable  {
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		return result;
 	}
-
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
